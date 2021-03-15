@@ -3,10 +3,11 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.remote.webdriver import WebDriver
 
-
+# 封装基类
 class BasePage:
     base_url = ""
 
+    # 默认参数是一个=
     def __init__(self, driver: WebDriver = None):
         if driver == None:
             # 复用打开的浏览器
