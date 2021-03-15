@@ -2,11 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from web.seleniumPO.page.add_member_page import AddMemberPage
-
-# 首页的PO
 from web.seleniumPO.page.base_page import BasePage
 
 
+# 首页的PO
 class MainPage(BasePage):
     base_url = "https://work.weixin.qq.com/wework_admin/frame#index"
 
